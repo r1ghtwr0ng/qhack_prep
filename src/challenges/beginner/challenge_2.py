@@ -40,7 +40,6 @@ def check(solution_output: str, expected_output: str) -> None:
     expected_output = json.loads(expected_output)
     assert np.allclose(solution_output, expected_output, rtol=1e-4)
 
-
 # These are the public test cases
 test_cases = [
     ('1.23456', '0.9440031218347901'),

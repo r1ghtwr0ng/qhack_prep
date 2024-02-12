@@ -19,8 +19,9 @@ def trotterize(alpha, beta, time, depth):
         (numpy.array): The probabilities of measuring each computational basis state.
     """
 
-
     # Put your code here #
+    qml.IsingXX(alpha, wires=[0,1])
+    qml.IsingZZ(beta, wires=[0,1])
     # Return the probabilities
 
 
